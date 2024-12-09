@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="styles/wel.css">
+    <link rel="shortcut icon" href="images/icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="images/icon.jpg" alt="Profile Picture" class="profile-pic">
+                <h2>Utilisateurs</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" class="active">Discussion</a></li>
+                    <li><a href="#">Paramètre</a></li>
+                    <li><a href="#">Document</a></li>
+                    <li><a href="#">Thème</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="chat-area">
+            <div class="chat-header">
+                <h2>Discussion</h2>
+            </div>
+        
+            <div class="chat-input">
+                <!-- Icone pour envoyer des photos -->
+                <button class="photo-button" title="Envoyer une photo">
+                    <i class="fas fa-camera"></i>
+                </button>
+                
+                <!-- Icone pour envoyer des vidéos -->
+                <button class="video-button" title="Envoyer une vidéo">
+                    <i class="fas fa-video"></i>
+                </button>
+            
+                <!-- Icone pour envoyer un message vocal -->
+                <button class="voice-button" title="Envoyer un message vocal">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                
+                <!-- Icone pour envoyer des pièces jointes -->
+                <label for="file-upload" class="file-upload-icon" title="Envoyer une pièce jointe">
+                    <i class="fas fa-paperclip"></i>
+                    <input type="file" id="file-upload" accept="image/*,video/*,application/pdf" hidden>
+                </label>
+                
+                <!-- Champ de texte pour écrire un message -->
+                <input type="text" placeholder="Écrire votre message...">
+                
+                <!-- Bouton pour envoyer le message -->
+                <button class="send-button" title="Envoyer le message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            
+        </main>
+    </div>
+</body>
+</html>
